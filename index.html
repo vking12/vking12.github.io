@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=utf-8>
+
+  <title>Assignment 3 -- three.js notRobot</title>
+
+  <!-- CSS Libraries -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <!-- CSS Source -->
+  <link rel="stylesheet" href="./src/css/main.css" />
+
+  <!-- JS Libraries -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="lib/js/three.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.6/d3.min.js"></script>
+  <script src="https://d3js.org/d3.v3.min.js"></script>
+  <script src="https://d3js.org/queue.v1.min.js"></script>
+  <script src="https://raw.githubusercontent.com/mrdoob/three.js/master/src/helpers/AxisHelper.js"></script>
+  <script src="https://raw.githubusercontent.com/mrdoob/three.js/429a0309d5d966da7fce3110897d93e36fe92ab6/examples/js/controls/OrbitControls.js"></script>
+  <script src="https://raw.githubusercontent.com/mrdoob/three.js/master/examples/js/controls/TrackballControls.js"></script>
+  <script src="https://raw.githubusercontent.com/mrdoob/three.js/master/examples/js/Detector.js"></script>
+  <script src="https://raw.githubusercontent.com/mrdoob/three.js/master/examples/js/libs/stats.min.js"></script>
+  <script src="https://raw.githubusercontent.com/mrdoob/three.js/master/examples/js/controls/DragControls.js"></script>
+  <script src="https://raw.githubusercontent.com/mrdoob/three.js/429a0309d5d966da7fce3110897d93e36fe92ab6/examples/js/controls/TransformControls.js"></script>
+
+  <!-- JS Source -->
+  <script src="./src/js/scene.js"></script>
+  <script src="./src/js/particleSystem.js"></script>
+  <script src="./src/js/main.js"></script>
+
+</head>
+
+<body onload="App.start();">
+  <div class="container-fluid">
+    <div class="class">
+      <div class="particleDiv col-md-6">
+        <div id="info">
+          Three dimensional view of flow. WS to move rectangle.<br />OP to change step size. Hold down on mouse to rotate object.
+        </div>
+        <div id="scene"></div>
+      </div>
+      <div id="info2">
+         Two dimensional slice of the flow.<br />Derived from the figure on the left.
+      </div>
+      <div class="box2"></div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>
