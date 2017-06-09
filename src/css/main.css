@@ -1,0 +1,41 @@
+body { margin: 0 }
+
+#scene { width: 90%; height: 90%}
+
+.box2 {
+    display: inline-block;
+    width: 150px;
+    height: 75px;
+    margin: 10px;
+}
+
+/* SVG styling */
+svg {
+    font-family: helvetica, sans-serif;
+}
+
+path, line {
+    stroke: #777;
+}
+
+.chart {
+
+}
+
+.main text {
+    font: 10px sans-serif;
+}
+
+.axis line, .axis path {
+    shape-rendering: crispEdges;
+    stroke: black;
+    fill: none;
+}
+
+circle {
+    fill: steelblue;
+}
+
+.dot {
+  stroke: #000;
+}
