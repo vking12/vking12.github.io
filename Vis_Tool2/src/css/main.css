@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  background: #EE7600 !important;
+}
+
+#scene {
+  width: 90%;
+  height: 90%
+}
+
+.checkbox-grid li {
+    display: block;
+    float: left;
+    width: 15%;
+}
+
+/* SVG styling */
+
+svg {
+  font-family: helvetica, sans-serif;
+}
+
+path, line {
+  stroke: #777;
+}
