@@ -8,6 +8,10 @@ body {
   height: 90%
 }
 
+.satImages {
+  margin: auto; max-width: 651;
+}
+
 .checkbox-grid li {
     display: block;
     float: left;
