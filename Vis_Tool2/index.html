@@ -22,6 +22,7 @@
   <script src="lib/js/stats.min.js"></script>
   <script src="lib/js/DragControls.js"></script>
   <script src="lib/js/TransformControls.js"></script>
+  <script src="lib/js/FileSaver.js"></script>
 
   <!-- JS Source -->
   <script src="./src/js/checkboxLogic.js"></script>
@@ -69,39 +70,40 @@
                 <li><input type="radio" name="filter" id="PlantHealth" /><label for="PlantHealth"> Plant Health</label></li>
                 <li><input type="radio" name="filter" id="FloodBurn" /><label for="FloodBurn"> Flood-Burn</label></li>
                 <li><input type="radio" name="filter" id="SnowIceClouds" /><label for="SnowIceClouds"> Snow-Ice-Clouds</label></li>
+                <div> <br> </div>
               </form>
             </ul>
           </div>
 
 
         </div>
+        <div class="satImages">
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-sm-2">
             <div id="txt1"> </div>
-            <canvas id="img1" width="651" height="651"></canvas>
+            <canvas id="img1" width="651" height="651" style="visibility: hidden"></canvas>
           </div>
-          <div class="col-sm-6">
+          <div class="col-sm-2">
             <div id="txt2"> </div>
             <canvas id="img2" width="651" height="651"></canvas>
           </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6">
+
+            <div class="col-sm-2">
               <div id="txt3"> </div>
               <canvas id="img3" width="651" height="651"></canvas>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-2">
               <div id="txt4"> </div>
               <canvas id="img4" width="651" height="651"></canvas>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6">
+
+            <div class="col-sm-2">
               <div id="txt5"> </div>
               <canvas id="img5" width="651" height="651"></canvas>
             </div>
         </div>
       </div>
+    </div>
     </div>
 </body>
 

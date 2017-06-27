@@ -10,6 +10,29 @@ var imgSystem = function() {
   // bounds of the data
   var bounds = {};
 
+  self.calculateSquareSideLength = function (x, y, n) {
+    // algorithm to calculate square side length for n squares within an
+    // x by y rectangle
+    let sx, sy;
+
+    let px = Math.ceil(Math.sqrt(n * x / y));
+
+    if (Math.floor(px * y / x) * px < n) { // does not fit, y/(x/px)=px*y/x
+      sx = y / Math.ceil(px * y / x);
+    } else {
+      sx = x / px;
+    }
+
+    let py = Math.ceil(Math.sqrt(n * y / x));
+    if (Math.floor(py * x / y) * py < n) { // does not fit
+      sy = x / Math.ceil(x * py / y);
+    } else {
+      sy = y / py;
+    }
+
+    return Math.max(sx, sy);
+  };
+
   self.createImg = function(wCanvas) {
     var canvas = document.getElementById(wCanvas);
     var ctx = canvas.getContext('2d');
@@ -24,6 +47,16 @@ var imgSystem = function() {
       imgdata.data[4 * i + 3] = 255; // APLHA (0-255)
     }
     ctx.putImageData(imgdata, 0, 0);
+
+    var oldCanvas = canvas.toDataURL("image/png");
+    var img = new Image();
+    img.src = oldCanvas;
+    img.onload = function() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.drawImage(img, 0, 0, 200, 200);
+      canvas.style.visibility = 'visible';
+    }
+
     // var img = canvas.toDataURL("image/png");
     // document.write('<img src="'+img+'"/>');
   };
