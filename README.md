@@ -10,4 +10,6 @@ Vis_Tool2: VAST Challenge 2017 -- Mini-Challenge 3 instead of using three.js I u
 functionality like the ability to choose specific dates as well as whatever mode you would like to see them in.
 I call it God Mode.
 
+touch_screen: Just messing around with some of the functionality of anime.js, definitely will implement some sort of website using the functionality from this library.
+
 Most of my projects will be linked here.
