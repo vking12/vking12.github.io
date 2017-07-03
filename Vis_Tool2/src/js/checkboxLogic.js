@@ -1,23 +1,22 @@
 function cLogic() {
   var framesLeft = 5;
 
-  var m14 = document.getElementById("Mar14").checked;
-  var a14 = document.getElementById("Aug14").checked;
-  var n14 = document.getElementById("Nov14").checked;
-  var d14 = document.getElementById("Dec14").checked;
-  var f15 = document.getElementById("Feb15").checked;
-  var j15 = document.getElementById("Jun15").checked;
-  var s15 = document.getElementById("Sep15").checked;
-  var n15 = document.getElementById("Nov15").checked;
-  var m16 = document.getElementById("Mar16").checked;
-  var j16 = document.getElementById("Jun16").checked;
-  var s16 = document.getElementById("Sep16").checked;
-  var d16 = document.getElementById("Dec16").checked;
-
-  var rgb = document.getElementById("RGB").checked;
-  var plantH = document.getElementById("PlantHealth").checked;
-  var floodB = document.getElementById("FloodBurn").checked;
-  var sic = document.getElementById("SnowIceClouds").checked;
+  var m14 = document.getElementById("Mar14").selected;
+  var a14 = document.getElementById("Aug14").selected;
+  var n14 = document.getElementById("Nov14").selected;
+  var d14 = document.getElementById("Dec14").selected;
+  var f15 = document.getElementById("Feb15").selected;
+  var j15 = document.getElementById("Jun15").selected;
+  var s15 = document.getElementById("Sep15").selected;
+  var n15 = document.getElementById("Nov15").selected;
+  var m16 = document.getElementById("Mar16").selected;
+  var j16 = document.getElementById("Jun16").selected;
+  var s16 = document.getElementById("Sep16").selected;
+  var d16 = document.getElementById("Dec16").selected;
+  var rgb = document.getElementById("RGB").selected;
+  var plantH = document.getElementById("PlantHealth").selected;
+  var floodB = document.getElementById("FloodBurn").selected;
+  var sic = document.getElementById("SnowIceClouds").selected;
 
 
   var vImage;
