@@ -9,6 +9,9 @@ Vis_Tool: VAST Challenge 2017 -- Mini-Challenge 3 initial manipulation using thr
 Vis_Tool2: VAST Challenge 2017 -- Mini-Challenge 3 instead of using three.js I used canvases (load much faster) and added
 functionality like the ability to choose specific dates as well as whatever mode you would like to see them in.
 I call it God Mode.
+Update 7/3/17: Changed the background colors to be less distracting and improved the dropdown menu.
+
+Vis_Tool3: A simple difference finder using the ultra lightweight pixelmatch.js, however I noticed that the difference finder doesn't seem to work so well when running it from github pages.
 
 touch_screen: Just messing around with some of the functionality of anime.js, definitely will implement some sort of website using the functionality from this library.
 
