@@ -30,6 +30,10 @@ body {
   color: #0eda9d;
 }
 
+#c_icon {
+  margin-top: 0.2em;
+}
+
 
 /*Gradient of Colors for border*/
 .g_box{
