@@ -1,41 +1,44 @@
-body { margin: 0 }
-
-#scene { width: 90%; height: 90%}
-
-.box2 {
-    display: inline-block;
-    width: 150px;
-    height: 75px;
-    margin: 10px;
+body {
+  background-color: #25274D;
 }
 
-/* SVG styling */
-svg {
-    font-family: helvetica, sans-serif;
+.name_large {
+  margin-bottom: 0.2em;
+  font-size: 300%;
+  font-weight: bold;
+  /*color: #0eda9d;*/
+  color: #DC143C;
 }
 
-path, line {
-    stroke: #777;
+.text_descr {
+  margin-top: 1em;
+  margin-right: 0.5em;
+  /*font-size: 200%;*/
+  font-weight: bold;
+  color: #f0f0f0;
 }
 
-.chart {
-
+#main_img {
+  width: 100%;
+  height: auto;
 }
 
-.main text {
-    font: 10px sans-serif;
+#moving_text {
+  color: #0eda9d;
 }
 
-.axis line, .axis path {
-    shape-rendering: crispEdges;
-    stroke: black;
-    fill: none;
-}
 
-circle {
-    fill: steelblue;
-}
+/*Gradient of Colors for border*/
+.g_box{
+	  width: 100%;
+	  height: auto;
+    margin: auto;
 
-.dot {
-  stroke: #000;
-}
+	  border: 1px solid transparent;
+
+	  -moz-border-image: -moz-linear-gradient(left, #3acfd5 0%, #3a4ed5 100%);
+	  -webkit-border-image: -webkit-linear-gradient(left, #3acfd5 0%, #3a4ed5 100%);
+	  border-image: linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%);
+
+	  border-image-slice: 1;
+	}
