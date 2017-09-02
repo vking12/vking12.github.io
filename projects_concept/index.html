@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=utf-8>
+
+  <title>i_am=Vijayraj_Mahida</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS Libraries -->
+  <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+  <!-- CSS Source -->
+  <link rel="stylesheet" href="./src/css/main.css" />
+
+  <!-- JS Libraries -->
+  <script src="lib/js/bootstrap.min.js"></script>
+  <script src="lib/js/anime.js"></script>
+
+  <!-- JS Source -->
+  <script src="src/js/typewriter.js"></script>
+
+
+</head>
+
+<body>
+    <!-- Obtained from: https://codepen.io/sebastianbaumann/pen/ogGdxX -->
+    <nav id="nav">
+      <ul>
+        <li>Vijayraj Mahida</li>
+        <li><a href="#section1">Intro </a></li>
+        <li><a href="#section2">Projects </a></li>
+        <li><a href="#section3">Resume </a></li>
+        <li><a href="#section4">Other Works</a></li>
+      </ul>
+    </nav>
+
+    <section id="section1">
+      <h1>Dynamic Navigation Bar</h1>
+      <p class="intro">
+        Inspired by the new Android Lollipop UI, the navbar gets colored dynamically with a tinted background-color of each following section.
+      </p>
+    </section>
+
+    <section id="section2">
+      <h2>Another Section…</h2>
+      <p>
+        By the way each section is displayed full screen just by one line of css. You can use viewport untis for flexible heights and widths.
+      </p>
+    </section>
+
+    <section id="section3">
+      <h2>And Another Section…</h2>
+    </section>
+
+    <section id="section4">
+      <h2>Wohoo! One more…</h2>
+    </section>
+
+  <script>
+    $(document).ready(function() {
+      var sections = $('section');
+      var navbar = $('#nav');
+      var navbarHeight = navbar.height();
+
+      var sectionOffset = [];
+
+      sections.each(function() {
+        var section = $(this);
+
+        var position = section.offset().top - navbarHeight;
+        var backgroundColor = section.css("background-color");
+
+        sectionOffset.push({
+          'postion': position,
+          'color': backgroundColor
+        });
+
+      });
+
+      $(window).on('scroll', function() {
+        var scrollPos = $(document).scrollTop();
+
+        $.each(sectionOffset, function(index, section) {
+          if (scrollPos >= section.postion) {
+            navbar.css("background-color", section.color);
+          }
+        })
+      });
+
+    });
+  </script>
+</body>
+
+</html>

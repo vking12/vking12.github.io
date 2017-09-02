@@ -1,0 +1,44 @@
+body {
+  background-color: #25274D;
+}
+
+.name_large {
+  margin-bottom: 0.2em;
+  font-size: 300%;
+  font-weight: bold;
+  /*color: #0eda9d;*/
+  color: #DC143C;
+}
+
+.text_descr {
+  margin-top: 1em;
+  margin-right: 0.5em;
+  /*font-size: 200%;*/
+  font-weight: bold;
+  color: #f0f0f0;
+}
+
+#main_img {
+  width: 100%;
+  height: auto;
+}
+
+#moving_text {
+  color: #0eda9d;
+}
+
+
+/*Gradient of Colors for border*/
+.g_box{
+	  width: 100%;
+	  height: auto;
+    margin: auto;
+
+	  border: 1px solid transparent;
+
+	  -moz-border-image: -moz-linear-gradient(left, #3acfd5 0%, #3a4ed5 100%);
+	  -webkit-border-image: -webkit-linear-gradient(left, #3acfd5 0%, #3a4ed5 100%);
+	  border-image: linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%);
+
+	  border-image-slice: 1;
+	}
