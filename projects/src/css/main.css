@@ -1,0 +1,47 @@
+body {
+  background-color: #25274D;
+}
+
+.name_large {
+  /*text-align: center;*/
+  margin-bottom: 0.2em;
+  font-size: 300%;
+  font-weight: bold;
+  /*color: #0eda9d;*/
+  color: #DC143C;
+}
+
+/*Gradient of Colors for border*/
+.g_box{
+	  border: 1px solid transparent;
+
+	  -moz-border-image: -moz-linear-gradient(left, #3acfd5 0%, #3a4ed5 100%);
+	  -webkit-border-image: -webkit-linear-gradient(left, #3acfd5 0%, #3a4ed5 100%);
+	  border-image: linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%);
+
+	  border-image-slice: 1;
+	}
+
+/*For portfolio styling*/
+/*--- GENERAL STYLES ---*/
+body { font-size: 16px; line-height: 1.5em; font-family: 'Quattrocento Sans', sans-serif; }
+h1 { font-weight: 700; color: #DC143C; }
+p { color: white; }
+
+.lead {
+  color: #0eda9d;
+}
+
+.caption {
+  color: #0eda9d;
+}
+
+/*--- PORTFOLIO ---*/
+.content-section .thumbnail { position: relative; overflow: hidden; cursor: pointer; }
+.content-section .thumbnail * { transition: all .25s; }
+.content-section .thumbnail h4 { font-size: 19px; font-weight: 400; }
+.content-section .thumbnail p { line-height: 24px; }
+.content-section .thumbnail:hover h4, .content-section .thumbnail:hover p { color: #AFAFAF; }
+.content-section .thumbnail:hover img { opacity: 0.25;  }
+.content-section .thumbnail:after { font-family: 'FontAwesome'; content: '\f121'; color: #FFF; font-size: 48px; line-height: 80px; top: 70%; position: absolute; text-align: center; display: inline-block; width: 100%; transition: all .35s; opacity: 0; width: 86px; height: 86px; margin-left: auto; margin-right: auto; left: 0; right: 0; border-radius: 50%; background: transparent; border:3px solid transparent; }
+.content-section .thumbnail:hover:after { top: 25%; opacity: 1; color: #FFFFFF; background: #AF6204; border:3px solid #FFFFFF; }
