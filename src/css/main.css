@@ -1,0 +1,100 @@
+body, html, .container-fluid {
+    height: 100%;
+    background-color: #25274D;
+}
+
+/* Nav Bar from tutorial: https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_vertical_borders*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    border: 1px solid #555;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+li a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+}
+
+li {
+    text-align: center;
+    border-bottom: 1px solid #555;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+
+.navigation {
+  margin-top: 15%;
+}
+
+.header_vm {
+  margin-top: 15%;
+}
+
+.name_large {
+  margin-bottom: 0.2em;
+  font-size: 300%;
+  font-weight: bold;
+  color: #DC143C;
+}
+
+.text_descr {
+  /*text-align: center;*/
+  margin-top: 1em;
+  margin-right: 0.5em;
+  font-weight: bold;
+  color: #f0f0f0;
+}
+
+.title {
+  margin-bottom: 0.1em;
+  font-size: 150%;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+#main_img {
+  margin-top: 5%;
+  width: 100%;
+  height: auto;
+}
+
+#moving_text {
+  text-align: center;
+  color: #0eda9d;
+}
+
+#c_icon {
+  margin-top: 0.2em;
+}
+
+
+/*Gradient of Colors for border*/
+.g_box{
+	  border: 1px solid transparent;
+
+	  -moz-border-image: -moz-linear-gradient(left, #3acfd5 0%, #3a4ed5 100%);
+	  -webkit-border-image: -webkit-linear-gradient(left, #3acfd5 0%, #3a4ed5 100%);
+	  border-image: linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%);
+
+	  border-image-slice: 1;
+	}
