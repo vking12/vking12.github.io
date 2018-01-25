@@ -1,0 +1,280 @@
+.modSep {
+  margin-top: 0.5em;
+  padding-top: 0.5em;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+}
+
+
+.tick line{
+  opacity: 0.2;
+  stroke-dasharray: 4,4;
+}
+
+.histogram {
+  isolation: isolate;
+}
+
+.histogram-area {
+  mix-blend-mode: screen;
+}
+
+.histogram-area.histogram-r {
+  fill: #f00;
+}
+
+.histogram-area.histogram-g {
+  fill: #0f0;
+}
+
+.histogram-area.histogram-b {
+  fill: #00f;
+}
+
+.histogram-line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.seper {
+  width: 426px;
+  height: 10px;
+}
+
+#entire_screen {
+  margin: 0.5em;
+  padding:1em;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+}
+
+#modSep {
+  margin: 0.5em;
+  padding:1em;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+}
+
+#titleText {
+  color: black;
+  font-size: 120%;
+  font-weight: bold;
+}
+
+
+
+#my-histogram{
+  position: absolute;
+  top: -341px;
+  /*top moved over so we can overlay the canvas on top of the other box*/
+  left: 10px;
+}
+
+#Canvas1,#Svg1{
+  position:absolute;
+  top: 9%;
+  left:19px;
+}
+
+
+#Canvas2,#Svg2{
+  position:absolute;
+  top: 39%;
+  left:19px;
+}
+
+
+#Canvas3,#Svg3{
+  position:absolute;
+  top: 68.65%;
+  left:19px;
+}
+
+#Zoom1, #Zoom2, #Zoom3{
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  width:314px !important;
+  height:314px !important;
+}
+
+#Graph1, #Graph2, #Graph3{
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  width:314px !important;
+  height:314px !important;
+}
+
+/*because of bootsrap formatting. */
+#txt9{
+  margin-top: 3.2em;
+  visibility: : hidden;
+}
+
+#txt1, #txt2, #txt3, #txt4, #txt5, #txt6, #txt7, #txt8, #txt10, #txt11, #txt12{
+  margin-top: 1em;
+  visibility: : hidden;
+}
+
+#img1, #img2, #img3, #img4, #img5, #img6, #img7, #img8, #img9, #img10, #img11, #img12{
+  visibility: : hidden;
+  border-style: solid;
+  border-width: 4px;
+  border-color: black;
+  width:338px !important;
+}
+
+#sepButton {
+  border-style: solid;
+  border-width: 4px;
+  border-color: #f0f0f0;
+  width:338px !important;
+}
+
+#selectTxt {
+  color: black;
+  font-size: 70%;
+}
+
+
+h1	{
+color: #FFF;
+font-family: arial, sans-serif;
+font-size: 36px;
+font-weight: bold;
+margin-top: 3px;
+margin-bottom:3px;
+}
+
+h2{
+color: #FFF;
+font-family: arial, sans-serif;
+font-size: 30px;
+margin-top: 0px;
+margin-bottom:0px;
+}
+
+h5	{
+color: #000 !important;
+font-family: arial, sans-serif  !important;
+font-size: 18px !important;
+margin-top: 1px !important;
+margin-bottom:1px !important;
+margin-left:30px !important;
+
+}
+
+main {
+  right:600px;
+  top:600px;
+  position: absolute;
+  background-color: purple;
+}
+
+
+body{
+  margin: auto;
+     background-color: white !important;
+     font-size: 14px;
+}
+
+label {
+  display: block;
+  color:white;
+  padding-left: 15px;
+  text-indent: -15px;
+  position: relative;
+  left:660px;
+}
+input {
+  color:white;
+  width: 13px;
+  height: 13px;
+  padding: 0;
+  margin:0;
+  vertical-align: bottom;
+  position: relative;
+  top: -1px;
+  *overflow: hidden;
+}
+
+.my-progress-bar {
+    float: left;
+    width: 0;
+    height: 100%;
+    font-size: 34px !important;
+    color : black !important;
+    background-color: white;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
+}
+
+/*button outlined */
+.btn-outline {
+    background-color: transparent;
+    color: inherit;
+    transition: all .1s;
+    background-image: none;
+    text-shadow: none;
+    border-width: 2px;
+    border-radius: 10px;
+}
+
+
+.btn-primary.btn-outline {
+    color: #2B669A;
+}
+
+.btn-primary.active{
+    color: #FFFFFF;
+}
+
+
+.btn-success.btn-outline {
+    color: #5cb85c;
+}
+
+.btn-info.btn-outline {
+    color: #5bc0de;
+}
+
+.btn-warning.btn-outline {
+    color: #f0ad4e;
+}
+
+.btn-danger.btn-outline {
+    color: #d9534f;
+}
+
+.btn-primary.btn-outline:hover{
+    color: #fff;
+    background: #428bca;
+}
+
+.btn-success.btn-outline:hover{
+    color: #fff;
+    background: #5cb85c;
+}
+
+.btn-info.btn-outline:hover{
+    color: #fff;
+    background: #5bc0de;
+}
+
+.btn-warning.btn-outline:hover{
+    color: #fff;
+    background: #f0ad4e;
+}
+
+.btn-danger.btn-outline:hover {
+    color: #fff;
+    background: #d9534f;
+}
