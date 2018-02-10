@@ -3,6 +3,10 @@ body, html, .container-fluid {
     background-color: #25274D;
 }
 
+.row {
+  margin: auto;
+}
+
 /* Nav Bar from tutorial: https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_vertical_borders*/
 ul {
     list-style-type: none;
@@ -51,16 +55,16 @@ li a:hover:not(.active) {
 }
 
 .name_large {
-  margin-bottom: 0.2em;
-  font-size: 300%;
+  margin-top: 2.5%;
+  font-size: 275%;
   font-weight: bold;
   color: #DC143C;
 }
 
 .text_descr {
   /*text-align: center;*/
-  margin-top: 1em;
   margin-right: 0.5em;
+  margin-bottom: 1.5em;
   font-weight: bold;
   color: #f0f0f0;
 }

@@ -139,5 +139,13 @@ EVL
 - Designed, built, and tested sensor networks (Kinect, Alexa, etc.) and data processsing to create browser based solutions that use d3, 
 
 
+Old EVL information
+•	Implemented server to house communication with Amazon’s Alexa to provide voice support for Articulate, a system which integrates natural language and gesture to provide visualizations to explore data. Single- and Multi- window manipulation commands added to SAGE2, a scalable amplifiable group environment, and Kinect (commands combine both gesture and voice).
+•	Created web-based tool that analyzes six-band satellite images to generate complimentary false-color images and zooming tool to analyze pixels in more depth. The tool was submitted for IEEE VAST Challenge 2017.
 
 
+
+Old Projects re-visited
+•	Created an Oculus Rift application that provides directions to building on UIC’s East Campus. Took 3D SketchUp mass models (provided by UIC’s Office of Facility and Space Planning) and imported them into 3DS Max, piped them into Unreal Engine 4 then later Unity (due to simplified pipeline of import/export of 3D objects and VR support). 
+
+Developed VR application with Oculus Rift DK2 that recreated UIC's East Campus with 3D SketchUp mass models provided by the Office of Facility and Space planning. Optimized models with 3DS Max then piped into Unreal Engine 4 and later Unity for users to visualize East Campus (provides scale and direction).
