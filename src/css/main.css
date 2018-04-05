@@ -1,6 +1,7 @@
 body, html, .container-fluid {
     height: 100%;
-    background-color: #25274D;
+    background-color: #ffffff;
+    /* background-color: #25274D; */
 }
 
 .row {
@@ -66,7 +67,8 @@ li a:hover:not(.active) {
   margin-right: 0.5em;
   margin-bottom: 1.5em;
   font-weight: bold;
-  color: #f0f0f0;
+  color: #000000;
+  /* color: #f0f0f0; */
 }
 
 .title {
