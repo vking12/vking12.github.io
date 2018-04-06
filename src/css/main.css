@@ -75,7 +75,8 @@ li a:hover:not(.active) {
   margin-bottom: 0.1em;
   font-size: 150%;
   font-weight: bold;
-  color: #ffffff;
+  color: #000000;
+  /* color: #ffffff; */
 }
 
 #main_img {
