@@ -107,13 +107,13 @@ li a:hover:not(.active) {
 .description-darker-grey {
   font-family: sans-serif;
   font-size: 150%;
-  color: #464646;
+  color: #808080;
 }
 
 .description-darkerer-grey {
   font-family: sans-serif;
   font-size: 110%;
-  color: #252525;
+  color: #606060;
 }
 
 .text_descr {
