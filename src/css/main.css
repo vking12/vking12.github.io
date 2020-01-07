@@ -209,7 +209,7 @@ li a:hover:not(.active) {
 
 #project-img-alt {
   transition: transform .5s, filter 1s ease-in-out;
-  filter: grayscale(100%);
+  /* filter: grayscale(100%); */
 }
 
 #project-img-alt:hover {
